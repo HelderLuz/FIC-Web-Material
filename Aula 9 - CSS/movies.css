@@ -1,11 +1,16 @@
 body {
-    background-color: #f5f395;
+    background-color: white;
     font-family: "Roboto", sans-serif;
 }
 
-h1, p {
-    background-color: blueviolet;
-    color: red;
+h1 {
+    background-color: transparent;
+    color: darkgoldenrod;
+    text-align: center;
+}
+
+h2 {
+    color:chocolate;
     text-align: center;
 }
 
@@ -18,21 +23,29 @@ p {
     color:whitesmoke;
 }
 
-table, th, td {
-    border: 2px solid purple;
+table, th{
+    border: 2px solid darkgoldenrod;
     border-collapse: collapse;
 }
 
 table th {
-    background-color: purple;
-    color: white
+    background-color: darkgoldenrod;
+    color: white;
+    font-size: 20px;
 }
 
 table td {
-    background-color: yellowgreen;
-    color: red
+    background-color: black;
+    color: darkgoldenrod;
 }
 
 .maior {
-    font-size: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
 }
+
+button {
+    background-color: red;
+}
+
