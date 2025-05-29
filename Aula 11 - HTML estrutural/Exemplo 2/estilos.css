@@ -1,0 +1,11 @@
+.caixa {
+    border: 2px solid #4CAF50;
+    padding: 16px;
+    margin-bottom: 16px;
+    background-color: #f0fff0;
+    }
+    .destaque {
+    color: #e91e63;
+    font-weight: bold;
+    }
+    

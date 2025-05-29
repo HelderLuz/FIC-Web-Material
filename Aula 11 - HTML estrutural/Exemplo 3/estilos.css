@@ -1,0 +1,43 @@
+a {
+    color: teal;
+    font-size: 30px;
+    background-color: black;
+}
+
+a:hover {
+    color: red;
+    font-size: 20px;
+}
+
+li:first-child {
+    font-weight: bold;
+}
+
+p:nth-child(2) {
+    background: #a83636;
+}
+
+div #cima:hover {
+    color: blueviolet;
+}
+
+p::first-line {
+    font-variant: small-caps;
+    font-size: larger;
+    font-weight: 900;
+}
+
+p::before {
+    content: "§ ";
+}
+
+p::selection {
+    background-color: rgb(255, 234, 0);
+    color: black;
+}
+
+li::marker {
+    color: green;
+    font-size: 16px;
+    content: "▶ ";
+}
