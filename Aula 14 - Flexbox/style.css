@@ -1,0 +1,38 @@
+body {
+    margin: 0;
+    background-color: aliceblue;
+    display: grid;
+    grid-template-areas: 
+        "header header header"
+        "main main aside"
+        "footer footer footer";
+    grid-template-columns: 2fr 2fr 1fr;
+}
+
+header {
+    grid-area: header;
+    background-color: yellowgreen;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+main {
+    grid-area: main;
+}
+
+aside {
+    grid-area: aside;
+}
+
+footer {
+    grid-area: footer;
+    background-color: black;
+    color:aliceblue;
+}
+
