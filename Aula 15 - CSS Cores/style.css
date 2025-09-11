@@ -1,19 +1,35 @@
-:root {
-    --cor-primaria: hsla(10, 52%, 50%, 1);
-    --cor-secundaria: hsla(195, 92%, 35%, 1);
-    --cor-terciaria: hsla(195, 92%, 50%, 1);
-    --background: rgb(208, 204, 204);
+body{background-color: aliceblue;display: grid; place-content: center;height: 100vh;margin: 0;}
+
+div {
+    width: 420px;
+    height: 400px;
+    background: red;
+    border-radius: 50%;
 }
 
-body {
-    background-color: var(--background);
+#circle {
+    position: relative;
+    width: 380px;
+    height: 380px;
+    background-color:white;
+    top: 10px;
+    left: 20px;
 }
 
-h1 {
-    color: var(--cor-primaria);
+#bar {
+    position: absolute;
+    width: 600px;
+    height: 200px;
+    border-radius: 0px;
+    top: 150px;
+    background: white;
 }
 
-P {
-    border: 5px solid var(--cor-primaria);
-    padding: 10px;
+#bar2 {
+    position: absolute;
+    width: 600px;
+    height: 200px;
+    border-radius: 0px;
+    bottom: 150px;
+    background: white;
 }
