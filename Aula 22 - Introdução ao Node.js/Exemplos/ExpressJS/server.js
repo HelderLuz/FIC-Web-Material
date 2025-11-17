@@ -25,7 +25,7 @@ app.get('/clientes/:id', (req, res) => {
 
 app.post('/clientes', (req, res) => {
     const { nome, data_nasc, email } = req.body
-    res.status(201).send(`Criado o usuário ${nome}`)
+    res.status(201).send({ "message": `Criado o usuário ${nome}` })
 })
 
 app.listen(3000, () => {
