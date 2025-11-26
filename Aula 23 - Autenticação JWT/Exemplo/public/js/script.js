@@ -18,7 +18,7 @@ form.addEventListener("submit", async (event) => {
   const resultado = await resposta.json();
 
   if (resultado.auth) {
-    window.location.href = '/clientes.html';
+    window.location.href = 'pages/clientes.html';
   } else {
     const divMensagem = document.querySelector('#mensagem');
     divMensagem.textContent = resultado.mensagem; 

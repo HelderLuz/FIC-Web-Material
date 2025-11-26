@@ -3,7 +3,7 @@ window.addEventListener('load', async () => {
   const clientes = await resposta.json();
 
   if (clientes.auth === false) {
-    window.location.href = '/index.html';
+    window.location.href = '../index.html';
     return;
   }
 
