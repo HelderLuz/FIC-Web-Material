@@ -22,7 +22,20 @@ export async function getClientById(id) {
   return rows;
 }
 
-export async function createClient(nome, email, cpf, data_nascimento) {
+export async function removeCliente(id) {
+  const [result] = await pool.execute('DELETE FROM cliente WHERE id = ?', [id]);
+  return result;
+}
+
+export async function updateCliente(id, cliente) {
+  const { nome, email, cpf, data_nascimento } = cliente
+  const [results] = await connection.execute('UPDATE cliente SET nome = ?, email = ?, cpf = ?, data_nascimento = ? WHERE id = ?', [nome, email, cpf, data_nascimento, id])
+  console.log(results)
+  return results;
+}
+
+export async function createCliente(cliente) {
+  const { nome, email, cpf, data_nascimento } = cliente
   const [result] = await pool.execute(
     'INSERT INTO cliente (nome, email, cpf, data_nascimento) VALUES (?, ?, ?, ?)',
     [nome, email, cpf, data_nascimento]

@@ -14,3 +14,17 @@ Content-Type: application/json
   "email": "teste@gmail.com",
   "senha": "123456"
 }
+
+###
+POST {{local}}/clientes
+Content-Type: application/json
+
+{
+  "nome": "Larissa",
+  "email": "larissa@email.com",
+  "cpf": "12345678900",
+  "data_nascimento": "2005-03-19T03:00:00.000Z"
+}
+
+###
+DELETE {{local}}/clientes/29
